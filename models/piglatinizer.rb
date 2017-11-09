@@ -11,7 +11,7 @@ class PigLatinizer
         first_letter << word[0]
         rest_of_word = word.slice![0]
       end
-      rest_of_word.join("") + first_letter + "ay"
+      rest_of_word + first_letter + "ay"
     end
   end
 
