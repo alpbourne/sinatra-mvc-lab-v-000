@@ -5,7 +5,7 @@ class PigLatinizer
     rest_of_word = []
 
     if vowels.include?(word[0])
-      word << "ay"
+      word + "ay"
     else
       while !vowels.include?(word[0])
         rest_of_word << word.slice![0]
