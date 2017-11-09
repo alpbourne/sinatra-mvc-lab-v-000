@@ -4,7 +4,7 @@ class PigLatinizer
     vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
 
     if vowels.include?(word[0])
-      word + "ay"
+      word + "way"
     else
       first_letter = []
       until vowels.include?(word[0])
