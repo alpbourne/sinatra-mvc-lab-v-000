@@ -12,7 +12,7 @@ class PigLatinizer
         word[0] = ""
       end
       word.split("")
-      word + first_letter.join + "ay"
+      word + first_letter.join("") + "ay"
     end
   end
 
