@@ -6,7 +6,7 @@ class PigLatinizer
     if vowels.include?(word[0])
       word + "ay"
     else
-      first_letter = ""
+      first_letter = []
       until vowels.include?(word[0])
         first_letter << word[0]
         word[0] = ""
