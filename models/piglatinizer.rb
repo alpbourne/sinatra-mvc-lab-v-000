@@ -7,7 +7,7 @@ class PigLatinizer
       word + "way"
     else
       first_letter = []
-      until vowels.include?(word[0])
+      while !vowels.include?(word[0])
         first_letter << word[0]
         word[0] = ""
       end
