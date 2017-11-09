@@ -7,11 +7,10 @@ class PigLatinizer
       word + "ay"
     else
       first_letter = ""
-      while !vowels.include?(word[0])
-        first_letter << word[0]
-        rest_of_word = word.slice![0]
+      until vowels.include?(word[0])
+        first_letter << word.slice![0]
       end
-      rest_of_word + first_letter + "ay"
+      word + first_letter.join + "ay"
     end
   end
 
