@@ -2,11 +2,11 @@ class PigLatinizer
 
   def piglatinize(word)
     vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
-    rest_of_word = []
 
     if vowels.include?(word[0])
       word + "ay"
     else
+      rest_of_word = ""
       while !vowels.include?(word[0])
         rest_of_word << word.slice![0]
       end
