@@ -12,7 +12,8 @@ class PigLatinizer
         word[0] = ""
       end
       word.split("")
-      (word + first_letter.join("")) + "ay"
+      rearranged_word = word + first_letter.join("")
+      rearranged_word = "ay"
     end
   end
 
